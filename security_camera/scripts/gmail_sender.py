@@ -9,9 +9,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 from email.utils import formatdate
 
-from_addr = 'camerabot18@gmail.com'
-addr_password = 'k4NfHf74S2wt'
-to_addr = 'kuen121819@gmail.com'
+from_addr = 'sender@gmail.com'
+addr_password = 'sender password'
+to_addr = 'receiver@gmail.com'
 bcc = ''
 subject = 'Human detected'
 content = 'A person has been detected in front of the camera'
