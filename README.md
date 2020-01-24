@@ -17,6 +17,7 @@ A small project from Robot System Lecture.
 
 ## Requirements  
 - [ROS](http://wiki.ros.org/ROS/Installation)  
+- [usb_cam ROS](http://wiki.ros.org/usb_cam)
 - [Darknet/Yolo ROS](https://github.com/leggedrobotics/darknet_ros)  
 - Python 2.7  
 - USB camera  
