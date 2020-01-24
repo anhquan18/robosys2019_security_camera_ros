@@ -5,7 +5,15 @@ Software for security camera with human detection using darknet/yolo and gmail n
 A small project from Robot System Lecture.  
 
 ## Demo  
-[Security camera with gmail notification](https://www.youtube.com/watch?v=pFAk4SXtzgE)
+[Security camera with gmail notification](https://www.youtube.com/watch?v=pFAk4SXtzgE)  
+
+## System Environment  
+|||
+|:--:|:--:|
+|OS|Ubuntu 18.04|
+|ROS|Melodic|
+|GPU|GTX 1060|
+|Camera|Logitech C270|
 
 ## Requirements  
 - [ROS](http://wiki.ros.org/ROS/Installation)  
@@ -24,13 +32,22 @@ $ git clone https://github.com/anhquan18/robosys2019_security_camera_ros.git
 $ cd ~/catkin_ws && catkin_make
 $ source ~/catkin_ws/devel/set_up.bash
 ```
-
+- Enable [less secure apps to access Gmail](https://hotter.io/docs/email-accounts/secure-app-gmail/) in Sender Google account  
+- Next, access and edit Sender and Receiver gmail accounts
+```bash
+$ cd ~/catkin_ws/src/robosys2019_security_camera_ros/security_camera/scripts
+$ gedit gmail_sender.py
+```
+- Replace `sender@gmail.com`, `sender password`, `receiver@gmail.com` with your Sender and Receiver gmail accounts  
  
  ## Usage
  Run the following command
- ```
- $ ./marble_machine_cover.py
+ ```bash
+ $ roslaunch security_camera security_camera.launch
  ```
  
  ## License
- This repository is licensed under the GPLv3 license, see [LICENSE](./COPYING)
+ This repository is licensed under the GPLv3 license, see [LICENSE](./COPYING)  
+ 
+ ## Reference
+ - [Send email with python](https://qiita.com/nakasuke_/items/607cf74d8841f76e59c6)
