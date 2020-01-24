@@ -47,7 +47,7 @@ $ gedit gmail_sender.py
  ```
  
  ## License
- This repository is licensed under the GPLv3 license, see [LICENSE](./COPYING)  
+ This repository is licensed under the BSD3 license, see [LICENSE](./COPYING)  
  
  ## Reference
  - [Send email with python](https://qiita.com/nakasuke_/items/607cf74d8841f76e59c6)
