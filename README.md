@@ -1,4 +1,4 @@
-# robosys2019_security_cameara_ros  
+# robosys2019_security_camera_ros  
 
 ## Description  
 Software for security camera with gmail notification human detection using darknet/yolo.  
