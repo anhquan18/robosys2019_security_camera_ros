@@ -19,7 +19,7 @@ content = 'A person has been detected in front of the camera'
 
 def create_msg_with_image(from_addr, to_addr, bcc_addrs, subject, content):
     # Read file as binary
-    with open("human_detected.png",'rb') as img_file: # can also do with file(filename, 'rb')
+    with open("human_detected.png",'rb') as img_file:
         img_data = img_file.read()
 
     msg = MIMEMultipart()
@@ -29,8 +29,7 @@ def create_msg_with_image(from_addr, to_addr, bcc_addrs, subject, content):
 
     text = MIMEText(content)
     msg.attach(text)
-    #image = MIMEImage(img_data, _subtype="jpeg")#, name=os.path.basename('./ononoki.jpeg'))
-    image = MIMEImage(img_data)#, _subtype="jpeg")
+    image = MIMEImage(img_data)
     msg.attach(image)
 
     return msg
